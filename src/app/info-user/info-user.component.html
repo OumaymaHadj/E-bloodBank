@@ -1,0 +1,67 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Users Table</h4>
+                        <p class="card-category"> Here is a subtitle for this table</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Email
+                                    </th>
+                                    <th>
+                                        Region
+                                    </th>
+                                    <th>
+                                      Phone
+                                  </th>
+                                  <th>
+                                    Action
+                                </th>
+                                </thead>
+                                <tbody>
+                                     
+                                
+                                    <tr *ngFor = "let user of users" (click)='selectUser(user)'>
+                                        <td> {{ user.id}}</td>
+                                        <td> {{ user.username}}</td>
+                                        <td> {{ user.email}}</td>
+                                        <td> {{ user.region}}</td>
+                                        <td> {{ user.phone}}</td>
+
+                                        <td>
+                                         
+                                            <button class="btn btn-sm btn-warning">
+                                              <i class="fa fa-edit"></i>Edit</button>
+                                            <button class="btn btn-sm btn-danger" (click)="deleteUser(user.id)">
+                                              <i class="fa fa-remove"></i>Delete</button>
+                                          </td>
+                                    </tr>                                     
+                                 
+                                    
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <div *ngIf="selected" class="col-md-4">
+                <app-detail-user [user] = 'selected' ></app-detail-user>
+            </div>
+        
+        </div>
+    </div>
+  </div>
+

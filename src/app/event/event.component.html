@@ -1,0 +1,248 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        
+                        <h4 class="card-title" *ngIf="showAdd">Plan an event</h4>
+                        <h4 class="card-title" *ngIf="showUpdate">Edit event</h4>
+                        <p class="card-category" *ngIf="showAdd">Complete your event</p>
+                        <p class="card-category" *ngIf="showUpdate">Edit your event</p>
+                    </div>
+                    <div class="card-body" >
+                        <form [formGroup]="formdata"  (ngSubmit)="onSubmit()">
+                            <div class="row">
+                                <div class="col-md-5">
+                                  <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Ayachni (Blood Bank)" disabled>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-7">
+                                    <mat-form-field class="example-full-width">
+                                      <input name="title" matInput placeholder="Event title" required formControlName="title" type="text">
+                                      <mat-error *ngIf="checkError('title','required')">Title is required</mat-error>
+                                      <mat-error *ngIf="checkError('title','pattern')">Not a valid title</mat-error>
+                                    </mat-form-field>
+                                </div>
+                                
+                            </div>
+                           <!-- <div class="row">
+                                <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input name="responsible" matInput placeholder="Organizer's name" required formControlName="responsible">
+                                    <mat-error *ngIf="checkError('responsible','required')">Name is required</mat-error>
+                                    <mat-error *ngIf="checkError('responsible','pattern')">Not a valid name</mat-error>
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  
+                                    <mat-form-field class="example-full-width">
+                                      <input name="max_nb_participants" matInput placeholder="Maximum number of participants" type="number" min="0" required formControlName="max_nb_participants">
+                                      <mat-error *ngIf="checkError('max_nb_participants','required')">Number of participants required</mat-error>
+  
+                                    </mat-form-field>
+                                  
+                                  
+                                </div>
+
+                                <div class="col-md-3">
+                                      <mat-form-field class="example-full-width">
+                                        
+                                        <input matTimepicker #t1="matTimepicker" #time1="ngModel" color="accent" [minDate]="minValue"
+                                          [maxDate]="maxValue" id="timepicker-example-1" mode="24h" ngModel placeholder="Please select time..."
+                                          name="time-1" required>
+                                        <mat-icon matSuffix (click)="t1.showDialog()">access_time</mat-icon>
+                                        <mat-error *ngIf="time1.touched && time1.invalid">Invalid Date</mat-error>
+                                      </mat-form-field>
+                                </div>
+                            </div> -->
+  
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <mat-label>City</mat-label>
+                                    <mat-select name="city" matInput placeholder="City" required formControlName="city">
+  
+                                      <mat-option value="Ariana">Ariana</mat-option>
+                                      <mat-option value="Beja">Beja</mat-option>
+                                      <mat-option value="Ben_Arous">Ben_Arous</mat-option>
+                                      <mat-option value="Bizerte">Bizerte</mat-option>
+                                      <mat-option value="Gabes">Gabes</mat-option>
+  
+                                      <mat-option value="Gafsa">Gafsa</mat-option>
+                                      <mat-option value="Jendouba">Jendouba</mat-option>
+                                      <mat-option value="Kairouan">Kairouan</mat-option>
+                                      <mat-option value="Kasserine">Kasserine</mat-option>
+  
+                                      <mat-option value="Kébili">Kébili</mat-option>
+                                      <mat-option value="Le_Kef">Le_Kef</mat-option>
+                                      <mat-option value="Mahdia">Mahdia</mat-option>
+                                      <mat-option value="La_Manouba">La_Manouba</mat-option>
+                                      <mat-option value="Medenine">Medenine</mat-option>
+  
+                                      <mat-option value="Monastir">Monastir</mat-option>
+                                      <mat-option value="Nabeul">Nabeul</mat-option>
+                                      <mat-option value="Sfax">Sfax</mat-option>
+                                      <mat-option value="Sidi_Bouzid">Sidi_Bouzid</mat-option>
+                                      <mat-option value="Siliana">Siliana</mat-option>
+  
+                                      <mat-option value="Sousse">Sousse</mat-option>
+                                      <mat-option value="Tataouine">Tataouine</mat-option>
+                                      <mat-option value="Tozeur">Tozeur</mat-option>
+                                      <mat-option value="Tunis">Tunis</mat-option>
+                                      <mat-option value="Zaghouan">Zaghouan</mat-option>
+  
+                                    </mat-select>
+                                    <mat-error *ngIf="checkError('city','required')">City is required</mat-error>
+                            
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input  name="country" matInput placeholder="Country" type="text" required formControlName="country">
+                                    <mat-error *ngIf="checkError('country','required')">Country is required</mat-error>
+                                    <mat-error *ngIf="checkError('country','pattern')">Not a valid country</mat-error>
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <mat-label>Date</mat-label>
+                                    <input  name="date" matInput placeholder="Date" [matDatepicker]="picker" 
+                                    [(ngModel)]="date" [min]="minDate" formControlName="date" >
+
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker ></mat-datepicker>
+                                    <mat-error *ngIf="checkError('date','required')">Date is required</mat-error>
+                                  </mat-form-field>
+                                 
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <mat-form-field class="example-full-width">
+                                  
+                                  <input matInput matTimepicker #t1="matTimepicker"  [minDate]="minValue" 
+                                  [(ngModel)]="start_time" [value]="start_time" formControlName="start_time"
+                                    [maxDate]="maxValue" id="timepicker-example-1" mode="24h" ngModel 
+                                    name="start_time" required>
+
+                                  <mat-icon matSuffix (click)="t1.showDialog()">access_time</mat-icon>
+                                  <mat-error *ngIf="checkError('start_time','required')">Start Time is required</mat-error>
+                                </mat-form-field>
+                                </div>
+                                <div class="col-md-3">
+                                  <mat-form-field class="example-full-width">
+                                    
+                                    <input matInput matTimepicker #t2="matTimepicker" [minDate]="formdata.value.startTime" 
+                                    [(ngModel)]="end_time" [value]="end_time"  formControlName="end_time"
+                                       id="timepicker-example-1" mode="24h" ngModel 
+                                      name="end_time"  required>
+                                    <mat-icon matSuffix (click)="t2.showDialog()">access_time</mat-icon>
+                                    <mat-error *ngIf="checkError('end_time','required')">End Time is required</mat-error>
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-6">
+                                  
+                                  <mat-form-field class="example-full-width">
+                                    <input name="max_nb_participants" matInput placeholder="Maximum number of participants"
+                                    type="number" min="0" required formControlName="max_nb_participants">
+                                    <mat-error *ngIf="checkError('max_nb_participants','required')">Number of participants required</mat-error>
+
+                                  </mat-form-field>
+                                
+                                
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <label>Description</label>
+                                  <mat-form-field class="example-full-width">
+                                     <textarea name="description" matInput placeholder="Define your event goals and objectives." required formControlName="description"></textarea>
+                                     <mat-error *ngIf="checkError('description','required')">Description is required</mat-error>
+                                    
+                                   </mat-form-field>
+                                </div>
+                            </div>
+                            <div>
+                              <button mat-raised-button type="submit" *ngIf="showAdd" class="btn btn-danger pull-right">Validate  &nbsp; the &nbsp; event
+                              </button>
+                              <button mat-raised-button type="button" *ngIf="showUpdate" (click)="updateEvent()" class="btn btn-danger pull-right">Update  &nbsp; the &nbsp; event
+                              </button>
+                              <button class="btn btn-info pull-right"  mat-raised-button type="reset" (click)="onReset()">CANCEL</button>
+                              <div class="clearfix"></div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-chart">
+                  <div class="card-header card-header-danger">
+                      <div class="ct-chart" id="completedTasksChart"></div>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="card-title">Completed Events</h4>
+                      <p class="card-category">Last Campaign Performance</p>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          <i class="material-icons">access_time</i> campaign sent 2 days ago
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header card-header-info">
+                    <h4 class="card-title">Events List</h4>
+                   <p class="card-category">You can select the desired event to send participation invitations to users</p> 
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-info detail">
+                           
+                            <th >Title</th>
+                            <th>Date</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            
+                            <th class="detail">Maximum Number of Participants</th>
+                            <th>
+                              Action
+                          </th>
+                        </thead>
+                        <tbody class="detail">
+                          <tr *ngFor = "let event of events ; let i = index" (dblclick) ="clicked(0,event) ">
+                            
+                            <td> {{ event.title}}</td>
+                            <td> {{ event.date | date}}</td>
+                            <td> {{ event.start_time | date:'shortTime'}}</td>
+                            <td> {{ event.end_time | date:'shortTime'}}</td>
+                            <td> {{ event.city}}</td>
+                            <td> {{ event.country}}</td>
+                           
+                            <td class="detail">  {{ event.max_nb_participants}}</td>
+  
+                            <td>
+                             
+                                <button class="btn btn-sm btn-info" (click)='clicked(2,event)'>
+                                  <i class="fa fa-edit"></i>Edit</button>
+                                <button class="btn btn-sm btn-danger" (click)="clicked(1, event.id)">
+                                  <i class="fa fa-remove"></i>Delete</button>
+                              </td>
+                        </tr>        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  

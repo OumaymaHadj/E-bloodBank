@@ -1,0 +1,9 @@
+<mat-dialog-content>
+	<p>
+		{{message}}
+	</p>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+	<button  class="btn btn-sm btn-basic" (click)="onConfirmClick()" tabindex="1">{{confirmButtonText}}</button>
+	<button class="btn btn-sm btn-danger" (click)="close()">{{cancelButtonText}}</button>
+</mat-dialog-actions>
