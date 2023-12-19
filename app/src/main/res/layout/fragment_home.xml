@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+
+    <TextView
+        style="@style/Base.Theme.Neumorph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/hubbali"
+        android:text="Hello , "
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        style="@style/Base.Theme.Neumorph"
+        android:layout_width="180dp"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:fontFamily="@font/hubbali"
+        android:textColor="@color/black"
+        android:textSize="22dp" />
+
+    <FrameLayout
+        android:layout_width="330dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_pub">
+
+        <VideoView
+            android:id="@+id/videoweview"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_start_vid"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:background="@color/teal_700"
+            android:src="@drawable/vid" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="331dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/bg_btn_pub">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePub"
+            android:layout_width="57dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/profile" />
+
+        <EditText
+            android:id="@+id/contenu"
+            android:layout_width="210dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="64dp"
+            android:padding="15dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_btn"
+            android:hint="Any questions ?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cool_grey"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/addImage"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/galerie3" />
+
+        <ImageView
+            android:id="@+id/publish"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/send" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listPub"
+        android:layout_width="331dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal" />
+
+
+    <FrameLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

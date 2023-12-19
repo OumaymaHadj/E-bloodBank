@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragment.leftMenuFragments.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="61dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Profile Photo"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/deleteProfilePhoto"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="28dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/hubbali"
+        android:layout_marginStart="190dp"
+        android:background="@drawable/bg_btn"
+        android:text="Delete"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+    <Button
+        android:id="@+id/editProfilePhoto"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="28dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/hubbali"
+        android:layout_marginStart="105dp"
+        android:background="@drawable/bg_complet"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="120dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/cool_grey"
+            android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_complet"
+        android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/editName"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/ic_edituser"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/cool_grey"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_complet"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/editEmail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/ic_edituser"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+           android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:text="+216"/>
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textSize="14dp"
+                android:textColor="@color/cool_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_complet"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/editPhone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/ic_edituser"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="420dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Region"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewRegion"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:textColor="@color/cool_grey"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_complet"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/editRegion"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/ic_edituser"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="520dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewBloodGroup"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/cool_grey"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_complet"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/editBloodGroup"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/ic_edituser"/>
+    </LinearLayout>
+
+</FrameLayout>

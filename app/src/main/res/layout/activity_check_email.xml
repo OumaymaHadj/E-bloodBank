@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckEmailActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/backToSignUp"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/neumorphCardView5"
+        android:layout_width="327dp"
+        android:layout_height="399dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="173dp"
+        android:background="@drawable/elevation"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="89dp"
+            android:fontFamily="@font/hubbali"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.01"
+            android:text="Check your email "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="29dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/neumorphCardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.174" />
+
+        <ImageView
+            android:layout_width="226dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/check_mail" />
+
+        <TextView
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:text="We have sent you an email to activate your account"
+            android:textAlignment="center"
+            android:textColor="@color/cool_grey"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</RelativeLayout>

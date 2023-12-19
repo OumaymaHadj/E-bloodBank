@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_marginStart="30dp"
+        android:background="@drawable/bgkonten"
+        android:layout_width="300dp"
+        android:layout_height="460dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hospital"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="120dp"
+            app:layout_constraintBottom_toTopOf="@+id/editText3"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="9dp"
+            android:text="Blood donation request"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editText3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent">
+
+            <EditText
+                android:id="@+id/name_beneficiary"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Enter the beneficiary's name please !"
+                android:textColorHint="@color/cool_grey"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:id="@+id/type_needed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Needed blood type"
+                android:textColorHint="@color/cool_grey"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/where_to_donate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="Which hospital?"
+                android:textColorHint="@color/cool_grey"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:hint="your phone number"
+                android:textColorHint="@color/cool_grey"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="53dp">
+
+            <Button
+                android:id="@+id/okRequest"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_complet"
+                android:fontFamily="@font/hubbali"
+                android:gravity="center"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cancel"
+                app:layout_constraintEnd_toStartOf="@+id/cancel"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cancel"
+                app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:layout_marginStart="30dp"
+                android:id="@+id/cancelRequest"
+                android:layout_width="80dp"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/hubbali"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

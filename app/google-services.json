@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944277624860",
+    "project_id": "ayachni-346923",
+    "storage_bucket": "ayachni-346923.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944277624860:android:b49709e49c8c83826727d9",
+        "android_client_info": {
+          "package_name": "hadj.tn.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944277624860-8nvk5p4n9ohfb7g0km92rm9r9st2coug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsPQ9zbEsHW8-x_BD2J9Nfwx3eo3XMKRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944277624860-8nvk5p4n9ohfb7g0km92rm9r9st2coug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

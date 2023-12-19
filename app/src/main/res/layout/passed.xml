@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="390dp"
+    android:background="@drawable/bgkonten"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/happy"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/flower"
+        android:text="Congratulations! You should be able to give blood."
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/flower"
+        android:text="There are some other eligibility criteria, but things are looking super promising. We can't wait to see you soon."
+        android:textAlignment="center"
+        android:textColor="@color/cool_grey"
+        android:textSize="15dp" />
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/okHome"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="138dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:text="Okay"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:neumorph_backgroundColor="#E9EDB303">
+
+    </soup.neumorphism.NeumorphButton>
+
+
+
+
+
+</LinearLayout>

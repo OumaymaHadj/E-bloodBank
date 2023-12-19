@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_backgroundColor="@color/teal_700"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white">
+
+    </item>
+    <item
+        android:id="@+id/ic_finddonor"
+        android:icon="@drawable/ic_fdf"
+        android:title="Find Donor"
+        app:cnb_backgroundColor="@color/teal_700"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white">
+
+    </item>
+    <item
+        android:id="@+id/ic_db"
+        android:icon="@drawable/ic_db"
+        android:title="Donate blood"
+        app:cnb_backgroundColor="@color/teal_700"
+        app:cnb_iconColor="@color/white"
+
+        app:cnb_textColor="@color/white">
+
+    </item>
+    <item
+        android:id="@+id/ic_educ"
+        android:icon="@drawable/ic_bookg"
+        android:title="Educate"
+        app:cnb_backgroundColor="@color/teal_700"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white">
+
+    </item>
+</menu>

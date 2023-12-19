@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".testFragments.Fragment_2">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:src="@drawable/heartt"
+        android:layout_marginStart="79dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you had a tattoo or piercing in the last three months?"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/ageInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="more info"
+            android:textColor="@color/teal_700"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow_right"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="100dp"
+        android:text="Yes"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp"
+        android:text="No"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+
+
+</FrameLayout>

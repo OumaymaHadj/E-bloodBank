@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.quizFragments.Quiz_8Fragment"
+    android:id="@+id/container"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ll"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardViewToolbar"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="260dp"
+        android:text="Will you travel overseas 4 months before your donation?"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="120dp"
+        android:text="more info"
+        android:textColor="@color/teal_700"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:src="@drawable/arrow_right"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="400dp"/>
+
+
+    <Button
+        android:id="@+id/btn1111111"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:text="Yes"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn2222222"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="200dp"
+        android:text="No"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+
+</FrameLayout>

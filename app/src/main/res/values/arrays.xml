@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Invitations</item>
+        <item>My posts</item>
+        <item>My requests</item>
+        <item>Account information</item>
+
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/pp</item>
+        <item>@drawable/notif</item>
+        <item>@drawable/posts</item>
+        <item>@drawable/requests</item>
+        <item>@drawable/account_info</item>
+
+    </array>
+
+    <style name="title">
+        <item name="android:fontFamily">@font/hubbali</item>
+        <item name="android:textSize">6dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+
+
+
+    </style>
+</resources>

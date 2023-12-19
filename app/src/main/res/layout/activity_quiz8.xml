@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz_8"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardViewToolbar"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:neumorph_shapeType="flat"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_700"
+            app:titleTextColor="@color/white">
+            <TextView
+                android:id="@+id/textToolbar"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text=" Eligibility test"
+                />
+            <ImageView
+                android:id="@+id/quit8"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@drawable/arrow_back" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="249dp"
+        android:src="@drawable/overseas"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardViewToolbar"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="383dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="316dp"
+        android:gravity="center"
+        android:text="Will you travel overseas 4 months before your donation?"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="more info"
+        android:textColor="@color/teal_700"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.153"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="236dp"
+        android:src="@drawable/arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn08"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:text="Yes"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.503"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn18"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:text="No"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/btn08"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.503"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

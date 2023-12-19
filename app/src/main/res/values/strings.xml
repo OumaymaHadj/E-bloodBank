@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ayachni</string>
+    <string name="Hope">Hope</string>
+    <string name="image">image</string>
+    <string name="pg">you are doing well, and let\'s start our journey</string>
+    <string name="secondPage">,Did you know … for every donation made, you give 3 people another shot at living their best lives …</string>
+
+    <string name="i_am_here">I am here</string>
+    <string name="provider_failed">Provider Failed</string>
+
+    <string name="account_balance">Account Balance</string>
+    <string name="balance_currency">$</string>
+    <string name="balance_amount">524.99</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
