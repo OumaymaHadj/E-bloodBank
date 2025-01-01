@@ -33,7 +33,8 @@ Our solution consists of:
 3. **Analytics and reporting:**
    - Track donor activities and blood bank statistics.
   
-![Capture_d_écran_2025-01-01_222853-removebg-preview](https://github.com/user-attachments/assets/131ad338-cd2f-40d5-b4ba-d4ab558baee8)
-![Capture d'écran 2025-01-01 223356](https://github.com/user-attachments/assets/86d31947-a7d4-41ef-9b36-0dce44b4cdce)
-![Capture d'écran 2025-01-01 223449](https://github.com/user-attachments/assets/f3c685f8-bbb3-464d-bf6c-04752060c3cb)
+![image (1)](https://github.com/user-attachments/assets/f007907e-79cd-4644-ac63-2d9eab778521)
+![image (2)](https://github.com/user-attachments/assets/0458cc28-24ca-4bb1-8c76-9c944ac4db25)
+![image (3)](https://github.com/user-attachments/assets/ad00f37e-5b52-4530-949a-5e26a0901740)
+
 
