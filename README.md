@@ -28,3 +28,6 @@ Ce projet se compose de :
    - Communication centralisée autour des événements.
 3. **Analyse et reporting :**
    - Suivi des activités des donneurs et des banques de sang.
+  
+![image](https://github.com/user-attachments/assets/ca1b00d7-9022-4a9b-b37e-15eb129f7344)
+
