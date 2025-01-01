@@ -1,33 +1,37 @@
-# AYACHNI - Plateforme de Don du Sang
+# AYACHNI - Blood Donation Platform
 
-Ce projet se compose de :
-- **Un front-office** : une application mobile intuitive pour les donneurs et les receveurs.
-- **Un back-office** : une application web dédiée à l'administration et à la gestion des données.
+## Introduction
 
-## Fonctionnalités
+The mobile application market has skyrocketed with the rapid success of Smartphones. In response to the challenges related to blood donation in Tunisia, **AYACHNI** is a platform designed to simplify and optimize the blood donation process.
 
-### Application Mobile (Front-office)
-1. **Trouver des donneurs à proximité :**
-   - Recherche rapide de donneurs compatibles en fonction du groupe sanguin et de la localisation.
-   - Contact direct pour assurer un don rapide.
-2. **Localiser les banques de sang :**
-   - Liste des banques de sang avec géolocalisation pour choisir la plus proche.
-3. **Gérer les publications :**
-   - Création et gestion des publications pour communiquer des besoins ou des informations.
-   - Consultation des publications des autres utilisateurs.
-4. **Conseils santé :**
-   - Recommandations pour rester en bonne santé après un don de sang.
-5. **Éligibilité au don de sang :**
-   - Questionnaire interactif pour vérifier si un utilisateur peut donner son sang.
+Our solution consists of:
+- **A front-office**: an intuitive mobile application for donors and recipients.
+- **A back-office**: a web application dedicated to administration and data management.
 
-### Application Web (Back-office)
-1. **Gestion des utilisateurs et des données :**
-   - Contrôle et supervision des informations fournies via l'application mobile.
-2. **Organisation d'événements de collecte de sang :**
-   - Planification d'événements avec un nombre précis de participants.
-   - Communication centralisée autour des événements.
-3. **Analyse et reporting :**
-   - Suivi des activités des donneurs et des banques de sang.
+## Features
+
+### Mobile Application (Front-office)
+1. **Find nearby donors:**
+   - Quickly search for compatible donors based on blood type and location.
+   - Direct contact to ensure fast donation.
+2. **Locate blood banks:**
+   - List of blood banks with geolocation to choose the nearest one.
+3. **Manage publications:**
+   - Create and manage posts to communicate needs or share information.
+   - View posts from other users.
+4. **Health tips:**
+   - Recommendations for staying healthy after a blood donation.
+5. **Blood donation eligibility:**
+   - Interactive questionnaire to verify if a user is eligible to donate blood.
+
+### Web Application (Back-office)
+1. **User and data management:**
+   - Oversee and manage the information provided via the mobile application.
+2. **Organize blood collection events:**
+   - Plan events with a specific number of participants.
+   - Centralized communication for event management.
+3. **Analytics and reporting:**
+   - Track donor activities and blood bank statistics.
   
 ![image](https://github.com/user-attachments/assets/ca1b00d7-9022-4a9b-b37e-15eb129f7344)
 
